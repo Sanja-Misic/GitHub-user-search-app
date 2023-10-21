@@ -47,6 +47,9 @@ async function getUserData() {
 
     userJoinedDate.textContent = formatedDate;
 
+    //img
+    userImg.src = userData.avatar_url;
+
     // bio
     if (userData.bio === null) userBio.textContent = 'This profile has no bio';
     else userBio.textContent = userData.bio;
