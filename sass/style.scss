@@ -1,0 +1,155 @@
+@import 'abstracts/variables';
+
+@import 'base/typography';
+
+// RESET
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 375px;
+  margin: 0 auto;
+  padding: 31px 24px 0 24px;
+  background-color: $background-color;
+}
+
+.main {
+  // width: 375px;
+  // margin: 0 auto;
+  // padding: 0 24px;
+}
+
+//HEADER
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+  }
+
+  &__themes {
+    margin-bottom: 35px;
+    &-text {
+      float: left;
+      margin-right: 16px;
+    }
+    &-icon {
+    }
+  }
+}
+
+// SEARCH
+.search {
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 6.5px 7px 7.5px 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  background: $container-background;
+  box-shadow: 0px 16px 30px -10px $container-shadow;
+
+  &__icon {
+    width: 20.048px;
+    height: 20px;
+    margin-right: 8.95px;
+  }
+  &__input {
+    padding: 11.5px 0px;
+    width: 100%;
+    border: none;
+    :focus {
+      outline: none;
+    }
+  }
+  &__button {
+    position: absolute;
+    right: 0;
+    margin-right: 7px;
+    padding: 12.5px 14.5px 12.5px 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: $blue-details;
+  }
+}
+
+.user {
+  padding: 32px 24px 48px 24px;
+  background-color: $container-background;
+  border-radius: 15px;
+  box-shadow: 0px 16px 30px -10px $container-shadow;
+
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-template-rows: auto auto;
+  column-gap: 19.5px;
+  row-gap: 33px;
+
+  &__image {
+    width: 70px;
+    border-radius: 70px;
+  }
+
+  &__heading {
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+  }
+  // &__name {
+  // }
+  // &__joied {
+  //   &-dat {
+  //   }
+  // }
+  &__login {
+    grid-row: 2 / 3;
+    margin-bottom: 6px;
+  }
+
+  &__item {
+    grid-column: 1 / -1;
+  }
+
+  &__bio {
+    margin-bottom: 23px;
+  }
+  &__info {
+    display: flex;
+    // justify-content: space-between;
+    text-align: center;
+    border-radius: 10px;
+    background: #f6f8ff;
+    padding: 18px 14px 19px 15px;
+    margin-bottom: 24px;
+    &-item {
+      &-text {
+        width: 80px;
+        margin-bottom: 8px;
+      }
+      &-number {
+      }
+    }
+  }
+  &__links {
+    display: grid;
+    // grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    &-item {
+      display: grid;
+      grid-template-columns: max-content auto;
+      justify-items: left;
+      gap: 13px;
+      margin-bottom: 17px;
+    }
+
+    &-link {
+    }
+
+    &-icon-wrapper {
+      width: 20px;
+    }
+  }
+}

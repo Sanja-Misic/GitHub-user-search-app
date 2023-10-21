@@ -12,9 +12,17 @@
     />
 
     <title>Frontend Mentor | GitHub user search app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
-    <header class="heder">
+    <header class="header">
       <p class="header__logo">devfinder</p>
       <div class="header__themes">
         <p class="header__themes-text">Dark</p>
@@ -26,7 +34,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="main">
       <div class="search">
         <img src="./images/icon-search.svg" alt="" class="search__icon" />
         <input
@@ -38,18 +46,17 @@
       </div>
 
       <div class="user">
-        <div class="user__item-1">
-          <img src="" alt="" class="user__image" />
+        <img src="" alt="" class="user__image" />
+
+        <div class="user__heading">
+          <h1 class="user__name"></h1>
+          <p class="user__joied">
+            Joined <span class="user__joined-date"></span>
+          </p>
+          <h2 class="user__login"></h2>
         </div>
 
-        <div class="user__item-2">
-          <div class="user__heading">
-            <h1 class="user__name"></h1>
-            <p class="user__joied">
-              Joined <span class="user__joined-date"></span>
-            </p>
-          </div>
-          <h2 class="user__login"></h2>
+        <div class="user__item">
           <p class="user__bio"></p>
           <div class="user__info">
             <div class="user__info-item">
