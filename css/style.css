@@ -77,16 +77,17 @@ body {
 body {
   width: 375px;
   margin: 0 auto;
-  padding: 31px 24px 0 24px;
+  padding: 31px 24px 79px 24px;
   background-color: #f6f8ff;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 35px;
 }
 .header__themes {
-  margin-bottom: 35px;
+  padding-top: 9px;
 }
 .header__themes-text {
   float: left;
@@ -124,6 +125,7 @@ body {
   border: none;
   border-radius: 10px;
   background-color: #0079ff;
+  color: #fff;
 }
 
 .user {
@@ -178,6 +180,13 @@ body {
   gap: 13px;
   margin-bottom: 17px;
 }
+.user__links-item--not-avilable {
+  opacity: 50%;
+}
 .user__links-icon-wrapper {
   width: 20px;
+}
+
+.not-avilable {
+  opacity: 50%;
 }

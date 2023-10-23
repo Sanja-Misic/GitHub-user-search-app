@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+.header__themes {
+  padding-top: 9px;
+}
+.header__themes-text {
+  float: left;
+  margin-right: 16px;
+}

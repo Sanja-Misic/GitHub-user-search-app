@@ -63,10 +63,14 @@ async function getUserData() {
     const addLinksContent = (linkElement, linkData) => {
       if (linkData === null) {
         linkElement.textContent = 'Not Avilable';
+        console.log(linkElement.parentElement);
+        linkElement.parentElement.style.opacity = '50%';
+        // linkElement.parentElement.classlist.add('not-avilable');
         linkElement.addEventListener('click', function (event) {
           event.preventDefault();
         });
       } else {
+        linkElement.parentElement.style.opacity = '100%';
         linkElement.textContent = linkData;
         linkElement.href = linkData;
         if (userData.login === 'octocat') {
