@@ -18,6 +18,8 @@ const twitterLink = document.querySelector('.twitter');
 const websiteLink = document.querySelector('.website');
 const companyLink = document.querySelector('.company');
 
+const searchButton = document.querySelector('.search__button');
+
 ////
 async function getUserData() {
   const url = `https://api.github.com/users/${username}`;
@@ -61,7 +63,7 @@ async function getUserData() {
 
     // links
     const addLinksContent = (linkElement, linkData) => {
-      if (linkData === null) {
+      if (linkData === null || linkData === '') {
         linkElement.textContent = 'Not Avilable';
         console.log(linkElement.parentElement);
         linkElement.parentElement.style.opacity = '50%';
@@ -91,3 +93,10 @@ async function getUserData() {
 }
 
 getUserData();
+
+searchButton.addEventListener('click', function (e) {
+  const inputValue = document.querySelector('.search__input').value;
+  e.preventDefault();
+  username = inputValue;
+  getUserData();
+});
