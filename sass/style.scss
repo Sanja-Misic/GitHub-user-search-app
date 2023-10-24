@@ -17,15 +17,24 @@
   background: $container-background;
   box-shadow: 0px 16px 30px -10px $container-shadow;
 
+  @media (min-width: 768px) {
+    margin-bottom: 24px;
+    padding: 9.5px 10px 9.5px 32px;
+  }
+
   &__icon {
-    width: 20.048px;
     height: 20px;
     margin-right: 8.95px;
+
+    @media (min-width: 768px) {
+      height: 24px;
+    }
   }
   &__input {
     padding: 11.5px 0px;
     width: 100%;
     border: none;
+
     :focus {
       outline: none;
     }
@@ -39,6 +48,10 @@
     border-radius: 10px;
     background-color: $blue-details;
     color: $pure-white;
+
+    @media (min-width: 768px) {
+      padding: 12.5px 23px 12.5px 24px;
+    }
   }
 }
 
@@ -54,14 +67,35 @@
   column-gap: 19.5px;
   row-gap: 33px;
 
+  @media (min-width: 768px) {
+    column-gap: 41px;
+    padding: 40px;
+    row-gap: 24px;
+  }
+  @media (min-width: 1440px) {
+    column-gap: 37px;
+    padding: 48px;
+    row-gap: 0px;
+  }
+
   &__image {
     width: 70px;
     border-radius: 70px;
+
+    @media (min-width: 768px) {
+      width: 117px;
+      border-radius: 117px;
+    }
   }
 
   &__heading {
     display: grid;
     grid-template-rows: min-content min-content min-content;
+
+    @media (min-width: 1440px) {
+      grid-template-rows: min-content min-content;
+      grid-template-columns: auto auto;
+    }
   }
 
   &__login {
@@ -69,34 +103,67 @@
     margin-bottom: 6px;
   }
 
+  &__joied {
+    @media (min-width: 1440px) {
+      justify-self: end;
+      align-self: center;
+    }
+  }
   &__item {
     grid-column: 1 / -1;
+
+    @media (min-width: 1440px) {
+      grid-column: 2 / -1;
+      margin-top: -35px;
+    }
   }
 
   &__bio {
     margin-bottom: 23px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 32px;
+    }
   }
   &__info {
     display: flex;
-    // justify-content: space-between;
     text-align: center;
+    justify-content: space-around;
     border-radius: 10px;
     background: $background-color;
     padding: 18px 14px 19px 15px;
     margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      text-align: left;
+      justify-content: space-between;
+      padding: 15px 96px 17px 32px;
+      margin-bottom: 33px;
+    }
+
+    @media (min-width: 1440px) {
+      padding: 15px 83px 17px 32px;
+      margin-bottom: 37px;
+    }
+
     &-item {
       &-text {
-        width: 80px;
         margin-bottom: 8px;
-      }
-      &-number {
+
+        @media (min-width: 768px) {
+          margin-bottom: 0px;
+        }
       }
     }
   }
   &__links {
     display: grid;
-    // grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
+
+    @media (min-width: 768px) {
+      grid-template-rows: auto auto;
+      grid-template-columns: auto auto;
+    }
 
     &-item {
       display: grid;
@@ -105,20 +172,17 @@
       gap: 13px;
       margin-bottom: 17px;
 
-      &--not-avilable {
-        opacity: 50%;
+      @media (min-width: 768px) {
+        margin-bottom: 19px;
       }
-    }
 
-    &-link {
+      // &--not-avilable {
+      //   opacity: 50%;
+      // }
     }
 
     &-icon-wrapper {
       width: 20px;
     }
   }
-}
-.not-avilable {
-  opacity: 50%;
-  // background-color: aqua;
 }

@@ -3,16 +3,12 @@
   justify-content: space-between;
   margin-bottom: 35px;
 
-  &__logo {
-  }
-
   &__themes {
     padding-top: 9px;
+
     &-text {
       float: left;
       margin-right: 16px;
-    }
-    &-icon {
     }
   }
 }

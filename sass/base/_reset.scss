@@ -10,3 +10,17 @@ body {
   padding: 31px 24px 79px 24px;
   background-color: $background-color;
 }
+
+@media (min-width: 768px) {
+  body {
+    width: 768px;
+    padding: 140px 98px 236px 97px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    width: 1440px;
+    padding: 144px 355px 170px 355px;
+  }
+}
