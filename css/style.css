@@ -42,6 +42,18 @@ body {
   }
 }
 
+.search__button {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+}
+@media (min-width: 768px) {
+  .search__button {
+    font-size: 16px;
+  }
+}
+
 .user__name {
   color: #2b3442;
   font-size: 16px;
@@ -192,7 +204,7 @@ body {
     padding: 12.5px 0px;
   }
 }
-.search__input :focus {
+.search__input:focus {
   outline: none;
 }
 .search__button {
@@ -203,7 +215,6 @@ body {
   border: none;
   border-radius: 10px;
   background-color: #0079ff;
-  color: #fff;
 }
 @media (min-width: 768px) {
   .search__button {

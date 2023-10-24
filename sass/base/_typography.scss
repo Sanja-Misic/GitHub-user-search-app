@@ -28,6 +28,7 @@ body {
   letter-spacing: 2.5px;
   text-transform: uppercase;
 }
+
 .search__input {
   color: $input-text-color;
   font-size: 13px;
@@ -41,6 +42,18 @@ body {
     font-size: 18px;
   }
 }
+
+.search__button {
+  color: $pure-white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
 .user__name {
   color: $user-name-and-num-color;
   font-size: 16px;
