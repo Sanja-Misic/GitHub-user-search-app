@@ -31,6 +31,7 @@ body {
 .search__input {
   color: #222731;
   font-size: 13px;
+  line-height: 25px;
 }
 .search__input::placeholder {
   color: #4b6a9b;
@@ -178,6 +179,7 @@ body {
 @media (min-width: 768px) {
   .search__icon {
     height: 24px;
+    margin-right: 24px;
   }
 }
 .search__input {
