@@ -35,6 +35,10 @@
     width: 100%;
     border: none;
 
+    @media (min-width: 768px) {
+      padding: 12.5px 0px;
+    }
+
     :focus {
       outline: none;
     }

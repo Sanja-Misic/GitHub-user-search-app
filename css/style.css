@@ -185,6 +185,11 @@ body {
   width: 100%;
   border: none;
 }
+@media (min-width: 768px) {
+  .search__input {
+    padding: 12.5px 0px;
+  }
+}
 .search__input :focus {
   outline: none;
 }
