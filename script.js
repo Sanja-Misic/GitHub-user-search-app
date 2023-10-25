@@ -82,8 +82,10 @@ async function getUserData() {
         });
       } else {
         linkElement.parentElement.style.opacity = '100%';
-        linkElement.textContent = linkData;
         linkElement.href = linkData;
+        if (linkElement === companyLink) {
+          linkElement.textContent = linkData.substring(1);
+        } else linkElement.textContent = linkData;
         if (userData.login === 'octocat') {
           linkElement.href = 'https://github.com/github';
           linkElement.classList.add('user__links-link');
