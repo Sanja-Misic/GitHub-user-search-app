@@ -142,15 +142,36 @@ body {
     font-size: 22px;
   }
 }
-
 .user__links-link {
-  color: $body-text-color;
+  &:link,
+  &:active,
+  &:visited {
+    color: inherit;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+      font-size: 15px;
+    }
+  }
+  &:hover {
+    text-decoration-line: underline;
+  }
+}
+
+.user__links-text {
   color: inherit;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-decoration: none;
+  cursor: auto;
+  text-decoration-line: none;
 
   @media (min-width: 768px) {
     font-size: 15px;

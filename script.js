@@ -75,7 +75,6 @@ async function getUserData() {
     const addLinksContent = (linkElement, linkData) => {
       if (linkData === null || linkData === '') {
         linkElement.textContent = 'Not Avilable';
-        console.log(linkElement.parentElement);
         linkElement.parentElement.style.opacity = '50%';
         // linkElement.parentElement.classlist.add('not-avilable');
         linkElement.addEventListener('click', function (event) {
@@ -87,13 +86,38 @@ async function getUserData() {
         linkElement.href = linkData;
         if (userData.login === 'octocat') {
           linkElement.href = 'https://github.com/github';
+          linkElement.classList.add('user__links-link');
+          linkElement.classList.remove('user__links-text');
         }
       }
     };
 
+    //links style
+    const linkFormat =
+      /^(http(s)?:\/\/)(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)$/;
+
+    const addLinksStyle = (linkElement, linkData) => {
+      if (!linkFormat.test(linkData)) {
+        linkElement.classList.add('user__links-text');
+        linkElement.classList.remove('user__links-link');
+        // linkElement.addEventListener('click', function (event) {
+        //   event.preventDefault();
+        // });
+        console.log(`${linkData} is not a link`);
+      } else {
+        console.log(`${linkData} is a link`);
+        linkElement.classList.add('user__links-link');
+        linkElement.classList.remove('user__links-text');
+      }
+    };
+
     addLinksContent(locationLink, userData.location);
+    addLinksStyle(locationLink, userData.location);
     addLinksContent(twitterLink, userData.twitter_username);
+    addLinksStyle(twitterLink, userData.twitter_username);
     addLinksContent(websiteLink, userData.blog);
+    addLinksStyle(websiteLink, userData.blog);
+    addLinksStyle(companyLink, userData.company);
     addLinksContent(companyLink, userData.company);
 
     /// Catch error

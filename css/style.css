@@ -123,17 +123,36 @@ body {
   }
 }
 
-.user__links-link {
-  color: #4b6a9b;
+.user__links-link:link, .user__links-link:active, .user__links-link:visited {
   color: inherit;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-decoration: none;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
-  .user__links-link {
+  .user__links-link:link, .user__links-link:active, .user__links-link:visited {
+    font-size: 15px;
+  }
+}
+.user__links-link:hover {
+  text-decoration-line: underline;
+}
+
+.user__links-text {
+  color: inherit;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  cursor: auto;
+  text-decoration-line: none;
+}
+@media (min-width: 768px) {
+  .user__links-text {
     font-size: 15px;
   }
 }
@@ -175,6 +194,7 @@ body {
   align-items: center;
   padding-top: 9px;
   background: transparent;
+  cursor: pointer;
 }
 .header__themes-text {
   margin-right: 16px;
@@ -189,6 +209,7 @@ body {
   border-radius: 15px;
   background: #fefefe;
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .search {
@@ -237,6 +258,7 @@ body {
   border: none;
   border-radius: 10px;
   background-color: #0079ff;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .search__button {
