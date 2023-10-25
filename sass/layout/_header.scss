@@ -4,11 +4,18 @@
   margin-bottom: 35px;
 
   &__themes {
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 9px;
+    background: transparent;
 
     &-text {
-      float: left;
       margin-right: 16px;
+    }
+
+    &-logo {
     }
   }
 }

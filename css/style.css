@@ -92,6 +92,7 @@ body {
 
 .user__info-item-text {
   color: #4b6a9b;
+  color: inherit;
   font-size: 11px;
   font-weight: 400;
   line-height: normal;
@@ -117,6 +118,7 @@ body {
 
 .user__links-link {
   color: #4b6a9b;
+  color: inherit;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -160,13 +162,16 @@ body {
   margin-bottom: 35px;
 }
 .header__themes {
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 9px;
+  background: transparent;
 }
 .header__themes-text {
-  float: left;
   margin-right: 16px;
 }
-
 .search {
   position: relative;
   width: 100%;
@@ -198,6 +203,7 @@ body {
   padding: 11.5px 0px;
   width: 100%;
   border: none;
+  background-color: #fefefe;
 }
 @media (min-width: 768px) {
   .search__input {
@@ -349,4 +355,92 @@ body {
 }
 .user__links-icon-wrapper {
   width: 20px;
+}
+
+.body-dark {
+  background-color: #141d2f;
+  color: #fff;
+}
+
+.header__logo-dark {
+  color: #fff;
+}
+
+.header__themes-text-dark {
+  color: #fff;
+}
+
+.search__input-dark {
+  color: #fff;
+}
+.search__input-dark::placeholder {
+  color: #fff;
+}
+
+.user__name-dark {
+  color: #fff;
+}
+
+.user__joied-dark {
+  color: #fff;
+}
+
+.user__info-item-number-dark {
+  color: inherit;
+}
+
+.search-dark {
+  background: #1e2a47;
+}
+
+.search__input-dark {
+  background: #1e2a47;
+}
+
+.user-dark {
+  background: #1e2a47;
+}
+
+.user__info-dark {
+  background: #141d2f;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #141d2f;
+    color: #fff;
+  }
+  .header__logo {
+    color: #fff;
+  }
+  .header__themes-text {
+    color: #fff;
+  }
+  .search__input {
+    color: #fff;
+  }
+  .search__input::placeholder {
+    color: #fff;
+  }
+  .user__name {
+    color: #fff;
+  }
+  .user__joied {
+    color: #fff;
+  }
+  .user__info-item-number {
+    color: inherit;
+  }
+  .search {
+    background: #1e2a47;
+  }
+  .search__input {
+    background: #1e2a47;
+  }
+  .user {
+    background: #1e2a47;
+  }
+  .user__info {
+    background: #141d2f;
+  }
 }

@@ -1,0 +1,104 @@
+.body-dark {
+  background-color: $background-color-dark;
+  color: $body-text-color-dark;
+}
+
+//Text colors
+.header__logo-dark {
+  color: $body-text-color-dark;
+}
+
+.header__themes-text-dark {
+  color: $body-text-color-dark;
+}
+
+.search__input-dark {
+  color: $body-text-color-dark;
+
+  &::placeholder {
+    color: $body-text-color-dark;
+  }
+}
+
+.user__name-dark {
+  color: $body-text-color-dark;
+}
+
+.user__joied-dark {
+  color: $body-text-color-dark;
+}
+
+.user__info-item-number-dark {
+  color: inherit;
+}
+
+//Background colors
+.search-dark {
+  background: $container-background-dark;
+}
+
+.search__input-dark {
+  background: $container-background-dark;
+}
+
+.user-dark {
+  background: $container-background-dark;
+}
+
+.user__info-dark {
+  background: $background-color-dark;
+}
+
+////////////
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: $background-color-dark;
+    color: $body-text-color-dark;
+  }
+
+  //Text colors
+  .header__logo {
+    color: $body-text-color-dark;
+  }
+
+  .header__themes-text {
+    color: $body-text-color-dark;
+  }
+
+  .search__input {
+    color: $body-text-color-dark;
+
+    &::placeholder {
+      color: $body-text-color-dark;
+    }
+  }
+
+  .user__name {
+    color: $body-text-color-dark;
+  }
+
+  .user__joied {
+    color: $body-text-color-dark;
+  }
+
+  .user__info-item-number {
+    color: inherit;
+  }
+
+  //Background colors
+  .search {
+    background: $container-background-dark;
+  }
+
+  .search__input {
+    background: $container-background-dark;
+  }
+
+  .user {
+    background: $container-background-dark;
+  }
+
+  .user__info {
+    background: $background-color-dark;
+  }
+}

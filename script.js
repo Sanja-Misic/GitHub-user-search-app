@@ -100,3 +100,37 @@ searchButton.addEventListener('click', function (e) {
   username = inputValue;
   getUserData();
 });
+
+// SWITCH DARK/LIGHT MODE
+const themesButton = document.querySelector('.header__themes');
+
+const body = document.querySelector('body');
+const logo = document.querySelector('.header__logo');
+const themes = document.querySelector('.header__themes-text');
+const searchContainer = document.querySelector('.search');
+const userContainer = document.querySelector('.user');
+const inputContainer = document.querySelector('.search__input');
+const userJoied = document.querySelector('.user__joied');
+const userInfo = document.querySelector('.user__info');
+const userNum = document.querySelectorAll('.user__info-item-number');
+
+const themesIcon = document.querySelector('.header__themes-icon');
+
+themesButton.addEventListener('click', function () {
+  body.classList.toggle('body-dark');
+  logo.classList.toggle('header__logo-dark');
+  themes.classList.toggle('header__themes-text-dark');
+  searchContainer.classList.toggle('search-dark');
+  userContainer.classList.toggle('user-dark');
+  inputContainer.classList.toggle('search__input-dark');
+  userName.classList.toggle('user__name-dark');
+  userJoied.classList.toggle('user__joied-dark');
+  userInfo.classList.toggle('user__info-dark');
+  userNum.forEach(element => {
+    element.classList.toggle('user__info-item-number-dark');
+  });
+
+  if (body.classList.contains('body-dark')) {
+    themesIcon.src = './images/icon-sun.svg';
+  } else themesIcon.src = './images/icon-moon.svg';
+});

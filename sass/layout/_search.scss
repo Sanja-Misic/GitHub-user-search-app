@@ -1,0 +1,54 @@
+.search {
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 6.5px 7px 7.5px 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  background: $container-background;
+  box-shadow: 0px 16px 30px -10px $container-shadow;
+
+  @media (min-width: 768px) {
+    margin-bottom: 24px;
+    padding: 9.5px 10px 9.5px 32px;
+  }
+
+  &__icon {
+    height: 20px;
+    margin-right: 8.95px;
+
+    @media (min-width: 768px) {
+      height: 24px;
+      margin-right: 24px;
+    }
+  }
+  &__input {
+    padding: 11.5px 0px;
+    width: 100%;
+    border: none;
+    background-color: $container-background;
+
+    @media (min-width: 768px) {
+      padding: 12.5px 0px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: 0;
+    margin-right: 7px;
+    padding: 12.5px 14.5px 12.5px 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: $blue-details;
+
+    @media (min-width: 768px) {
+      padding: 12.5px 23px 12.5px 24px;
+    }
+  }
+}

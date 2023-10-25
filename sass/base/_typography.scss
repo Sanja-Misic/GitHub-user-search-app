@@ -10,13 +10,15 @@ body {
   }
 }
 
-// placeholder dodaj stil
-
 .header__logo {
   color: $logo-color;
   font-size: 26px;
   font-weight: 700;
   line-height: normal;
+
+  // &-dark {
+  //   color: $body-text-color-dark;
+  // }
 }
 
 .header__themes-text {
@@ -27,6 +29,10 @@ body {
   line-height: normal;
   letter-spacing: 2.5px;
   text-transform: uppercase;
+
+  // &-dark {
+  //   color: $body-text-color-dark;
+  // }
 }
 
 .search__input {
@@ -37,6 +43,13 @@ body {
   &::placeholder {
     color: $body-text-color;
   }
+  // &-dark {
+  //   color: $body-text-color-dark;
+
+  //   &::placeholder {
+  //     color: $body-text-color-dark;
+  //   }
+  // }
 
   @media (min-width: 768px) {
     font-size: 18px;
@@ -60,6 +73,10 @@ body {
   font-weight: 700;
   line-height: normal;
 
+  // &-dark {
+  //   color: $body-text-color-dark;
+  // }
+
   @media (min-width: 768px) {
     font-size: 26px;
   }
@@ -82,6 +99,10 @@ body {
   font-weight: 400;
   line-height: normal;
 
+  // &-dark {
+  //   color: $body-text-color-dark;
+  // }
+
   @media (min-width: 768px) {
     font-size: 15px;
   }
@@ -89,6 +110,7 @@ body {
 
 .user__info-item-text {
   color: $body-text-color;
+  color: inherit;
   font-size: 11px;
   font-weight: 400;
   line-height: normal;
@@ -105,6 +127,10 @@ body {
   line-height: normal;
   text-transform: uppercase;
 
+  // &-dark {
+  //   color: inherit;
+  // }
+
   @media (min-width: 768px) {
     font-size: 22px;
   }
@@ -112,6 +138,7 @@ body {
 
 .user__links-link {
   color: $body-text-color;
+  color: inherit;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
