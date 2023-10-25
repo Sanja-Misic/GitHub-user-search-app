@@ -29,7 +29,7 @@ async function getUserData() {
     /// Catch data
     const response = await fetch(url);
     const userData = await response.json();
-    console.log(userData);
+    // console.log(userData);
 
     /// Set text content on DOM elements
     // Funcionality for not found user
@@ -100,12 +100,7 @@ async function getUserData() {
       if (!linkFormat.test(linkData)) {
         linkElement.classList.add('user__links-text');
         linkElement.classList.remove('user__links-link');
-        // linkElement.addEventListener('click', function (event) {
-        //   event.preventDefault();
-        // });
-        console.log(`${linkData} is not a link`);
       } else {
-        console.log(`${linkData} is a link`);
         linkElement.classList.add('user__links-link');
         linkElement.classList.remove('user__links-text');
       }

@@ -3,7 +3,7 @@ body {
   color: $body-text-color;
   font-size: 13px;
   font-weight: 400;
-  line-height: 25px; /* 166.667% */
+  line-height: 25px;
 
   @media (min-width: 768px) {
     font-size: 15px;
@@ -15,10 +15,6 @@ body {
   font-size: 26px;
   font-weight: 700;
   line-height: normal;
-
-  // &-dark {
-  //   color: $body-text-color-dark;
-  // }
 }
 
 .header__themes-text {
@@ -29,10 +25,6 @@ body {
   line-height: normal;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-
-  // &-dark {
-  //   color: $body-text-color-dark;
-  // }
 }
 
 .search__input {
@@ -43,13 +35,6 @@ body {
   &::placeholder {
     color: $body-text-color;
   }
-  // &-dark {
-  //   color: $body-text-color-dark;
-
-  //   &::placeholder {
-  //     color: $body-text-color-dark;
-  //   }
-  // }
 
   @media (min-width: 768px) {
     font-size: 18px;
@@ -80,10 +65,6 @@ body {
   font-weight: 700;
   line-height: normal;
 
-  // &-dark {
-  //   color: $body-text-color-dark;
-  // }
-
   @media (min-width: 768px) {
     font-size: 26px;
   }
@@ -105,10 +86,6 @@ body {
   font-size: 13px;
   font-weight: 400;
   line-height: normal;
-
-  // &-dark {
-  //   color: $body-text-color-dark;
-  // }
 
   @media (min-width: 768px) {
     font-size: 15px;
@@ -133,10 +110,6 @@ body {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-
-  // &-dark {
-  //   color: inherit;
-  // }
 
   @media (min-width: 768px) {
     font-size: 22px;
