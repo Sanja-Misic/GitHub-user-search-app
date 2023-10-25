@@ -65,5 +65,5 @@ These learned skills significantly enhanced my web development abilities.
 
 ## Author
 
-- Website - [Add your name here](https://sanja-misic.github.io/My-portfolio-website/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Sanja-Misic)
+- Website - [Sanja Misic](https://sanja-misic.github.io/My-portfolio-website/)
+- Frontend Mentor - [Sanja Misic](https://www.frontendmentor.io/profile/Sanja-Misic)
