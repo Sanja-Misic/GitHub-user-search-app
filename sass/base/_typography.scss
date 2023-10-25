@@ -56,6 +56,13 @@ body {
   }
 }
 
+.search__no-results {
+  color: #f74646;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .search__button {
   color: $pure-white;
   font-size: 14px;

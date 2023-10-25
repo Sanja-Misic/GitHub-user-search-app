@@ -42,6 +42,13 @@ body {
   }
 }
 
+.search__no-results {
+  color: #f74646;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .search__button {
   color: #fff;
   font-size: 14px;
@@ -213,6 +220,15 @@ body {
 .search__input:focus {
   outline: none;
 }
+.search__no-results {
+  position: absolute;
+  top: 23px;
+  right: 140px;
+  display: none;
+}
+.search__no-results-active {
+  display: block;
+}
 .search__button {
   position: absolute;
   right: 0;
@@ -252,6 +268,9 @@ body {
     padding: 48px;
     row-gap: 0px;
   }
+}
+.user__no-results {
+  display: none;
 }
 .user__image {
   width: 70px;

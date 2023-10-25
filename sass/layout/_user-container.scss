@@ -21,6 +21,9 @@
     row-gap: 0px;
   }
 
+  &__no-results {
+    display: none;
+  }
   &__image {
     width: 70px;
     border-radius: 70px;

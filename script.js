@@ -19,6 +19,7 @@ const websiteLink = document.querySelector('.website');
 const companyLink = document.querySelector('.company');
 
 const searchButton = document.querySelector('.search__button');
+const noResultsMessage = document.querySelector('.search__no-results');
 
 ////
 async function getUserData() {
@@ -31,6 +32,15 @@ async function getUserData() {
     console.log(userData);
 
     /// Set text content on DOM elements
+    // Funcionality for not found user
+    if (userData.message === 'Not Found') {
+      noResultsMessage.classList.add('search__no-results-active');
+      userContainer.classList.add('user__no-results');
+    } else {
+      noResultsMessage.classList.remove('search__no-results-active');
+      userContainer.classList.remove('user__no-results');
+    }
+
     // name and login
     if (userData.name === '' || userData.name === null)
       userName.textContent = userData.login;

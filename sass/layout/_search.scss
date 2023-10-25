@@ -38,6 +38,17 @@
     }
   }
 
+  &__no-results {
+    position: absolute;
+    top: 23px;
+    right: 140px;
+    display: none;
+
+    &-active {
+      display: block;
+    }
+  }
+
   &__button {
     position: absolute;
     right: 0;
