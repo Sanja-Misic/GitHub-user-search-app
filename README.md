@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Sanja-Misic/GitHub-user-search-app)
-- Live Site URL: [Add live site URL here](https://sanja-misic.github.io/GitHub-user-search-app/)
+- Solution URL: [here](https://github.com/Sanja-Misic/GitHub-user-search-app)
+- Live Site URL: [here](https://sanja-misic.github.io/GitHub-user-search-app/)
 
 ## My process
 
